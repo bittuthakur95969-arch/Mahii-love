@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at top left, #ff9a9e, #fad0c4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.message {
+  font-size: 2.5em;
+  animation: glow 2s infinite alternate;
+}
+
+.sub {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #fff5f5;
+}
+
+.teddy {
+  width: 180px;
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+}
+
+/* Floating hearts animation */
+.heart {
+  position: absolute;
+  color: #ff2e63;
+  font-size: 20px;
+  opacity: 0.8;
+  animation: floatUp 4s linear infinite;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff2e63;
+  }
+  to {
+    text-shadow: 0 0 30px #fff, 0 0 60px #ff2e63;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) scale(1.5);
+    opacity: 0;
+  }
+}
+ #myImage {
+      display: none;
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #showBtn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #showBtn:hover {
+      background-color: #0056b3;
+    }
